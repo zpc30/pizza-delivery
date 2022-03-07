@@ -5,9 +5,11 @@ import { ThemeProvider } from 'styled-components';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={{
-      color: 'yellow'
-    }}>
+    <ThemeProvider
+      theme={{
+        color: 'yellow',
+      }}
+    >
       <App />
     </ThemeProvider>
   </React.StrictMode>,

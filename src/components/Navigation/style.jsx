@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const MainNav = styled.div({
   height: '100px',
@@ -21,7 +22,7 @@ export const NavLinks = styled.ul(
   ({ theme }) => ({})
 );
 
-export const NavLinksA = styled.a(
+export const NavLinksA = styled(Link)(
   {
     textDecoration: 'none',
     textTransform: 'uppercase',

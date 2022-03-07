@@ -12,7 +12,6 @@ const Gallery = () => {
       <div>
         <img src="./images/slide1.png" />
         <img src="./images/slide2.png" />
-        <img src="./images/slide3.png" />
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Navigation from './components/Navigation';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navigation from './components/Navigation';
 import Footer from './components/Footer/Footer';
+import Menu from './pages/Menu';
 import './global.css';
 
 ReactDOM.render(
@@ -18,7 +19,7 @@ ReactDOM.render(
         <Navigation />
         <Routes>
           <Route path="/" element={<App />} />
-          {/* <Route path="menu" element={<Menu />} /> */}
+          <Route path="menu" element={<Menu />} />
         </Routes>
         <Footer />
       </Router>

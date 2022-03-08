@@ -15,8 +15,11 @@ import MenuItemDisplay from '../../components/MenuItemDisplay';
 import food from '../../data/food';
 
 const Menu = () => {
-  const filters = ['All', 'Vegan', 'Cheese', 'Tuna', 'Chilly'];
-  const [activeFilter, setActiveFilter] = useState(filters[0]);
+  const categories = ['All', 'Vegeterian', 'Cheese', 'Fish', 'Chilly', 'Meat'];
+  const [activeFilter, setActiveFilter] = useState(categories[0]);
+  const foodList = food.filter((item) =>
+    activeFilter === 'All' ? true : item.category === activeFilter
+  );
 
   return (
     <>
@@ -29,8 +32,8 @@ const Menu = () => {
       <MenuContainer>
         <SideMenuDiv>
           <SideMenuCategories>
-            {filters &&
-              filters.map((filterName, idx) => (
+            {categories &&
+              categories.map((filterName, idx) => (
                 <li onClick={() => setActiveFilter(filterName)} key={idx}>
                   <SideMenuLinks isActive={activeFilter === filterName}>
                     {filterName}
@@ -40,7 +43,7 @@ const Menu = () => {
           </SideMenuCategories>
         </SideMenuDiv>
         <MenuItems>
-          {food.map((foodItem) => (
+          {foodList.map((foodItem) => (
             <MenuItemDisplay
               key={foodItem.id}
               imageUrl={process.env.PUBLIC_URL + foodItem.img}

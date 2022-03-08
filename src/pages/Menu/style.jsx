@@ -65,7 +65,6 @@ export const MenuItems = styled.div({
   display: 'grid',
   gridTemplateColumns: 'auto auto',
   rowGap: '5%',
-  // columnGap: '15%',
 });
 
 export const MenuItem = styled.div({

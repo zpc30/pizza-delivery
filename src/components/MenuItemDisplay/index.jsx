@@ -1,9 +1,7 @@
 import { MenuItem, MenuItemPhoto } from '../../pages/Menu/style';
-import { React, useState } from 'react';
+import { React } from 'react';
 
 const MenuItemDisplay = ({ imageUrl, title, desc, price }) => {
-  // const [menuItem, setMenuItem] = useState(food);
-  // const { imageUrl, desc, title, price, id } = foodItem;
   return (
     <>
       <MenuItem>

@@ -34,9 +34,8 @@ export const MenuPizza = styled.img({
 
 export const SideMenuDiv = styled.div({
   marginTop: '2rem',
-  width: '20vw',
-  height: '100%',
-  borderRight: '2px solid red',
+  width: '10vw',
+  height: '100vh',
 });
 
 export const SideMenuCategories = styled.ul({
@@ -71,6 +70,8 @@ export const MenuItems = styled.div({
   gridTemplateColumns: 'repeat(2, 1fr)',
   rowGap: '50px',
   heigh: '100%',
+  borderLeft: '2px solid red',
+  paddingLeft: '10rem',
 });
 
 export const MenuItem = styled.div({

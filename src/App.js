@@ -1,21 +1,35 @@
-import Hello from './components/Hello';
-import Hero from './components/Hero/Hero';
-import Navigation from './components/Navigation/Navigation';
-import AboutUs from './components/AboutUs/AboutUs';
 import { AppBody } from './AppStyle';
-import Gallery from './components/Gallery/Gallery';
-import Menu from './components/Menu/Menu';
-import Footer from './components/Footer/Footer';
+import Home from './pages/Home';
 
 function App() {
+  const nameField = 'name';
+
+  const myObj = {
+    name: 'John',
+    age: 22,
+  };
+
+  const myObjStr = {
+    [nameField]: 'Jane',
+  };
+
+  const myObjStar = {
+    '&:hover': 'my&value',
+  };
+
+  console.log(myObj);
+  console.log(myObjStr);
+  console.log(myObjStar);
+
   return (
     <AppBody>
-      <Navigation />
+      {/* <Navigation />
       <Hero />
       <AboutUs />
       <Gallery />
       <Menu />
-      <Footer />
+      <Footer /> */}
+      <Home />
     </AppBody>
   );
 }

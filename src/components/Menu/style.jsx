@@ -41,9 +41,9 @@ export const MenuHot = styled.div`
   }
 `;
 
-export const MenuImgContainer = styled.div`
-  position: relative;
-  &:hover {
-    font-size: 22px;
-  }
-`;
+export const MenuImgContainer = styled.div({
+  position: 'relative',
+  '&:hover': {
+    fontSize: '22px',
+  },
+});

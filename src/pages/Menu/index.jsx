@@ -7,6 +7,7 @@ import {
   SideMenuCategories,
   SideMenuLinks,
   MenuItems,
+  MenuPizza,
   MenuItem,
   MenuItemsRow,
   MenuItemPhoto,
@@ -28,6 +29,7 @@ const Menu = () => {
           Whatever the question,
           <br /> <span>pizza</span> is the answer
         </MenuHeading>
+        <MenuPizza src="./images/pizzaTile.png" />
       </UpperMenuDiv>
       <MenuContainer>
         <SideMenuDiv>

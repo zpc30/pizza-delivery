@@ -4,26 +4,32 @@ export const MenuContainer = styled.div({
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-evenly',
-  height: '100%',
   margin: 0,
   padding: 0,
 });
 
 export const UpperMenuDiv = styled.div({
   position: 'relative',
-  height: '30vh',
+  height: '40vh',
+  zIndex: '-1',
 });
 
 export const MenuHeading = styled.h1({
-  position: 'absolute',
-  left: 10,
-  top: 0,
+  padding: '3rem',
   color: 'red',
   fontSize: '5rem',
   lineHeight: '4rem',
   span: {
-    color: 'yellow',
+    color: '#F9A72B',
   },
+});
+
+export const MenuPizza = styled.img({
+  position: 'absolute',
+  opacity: '0.3',
+  width: '550px',
+  top: '0',
+  zIndex: '-1',
 });
 
 export const SideMenuDiv = styled.div({
@@ -60,11 +66,11 @@ export const SideMenuLinks = styled.button(
 
 export const MenuItems = styled.div({
   position: 'relative',
-  height: '100%',
   width: '60%',
   display: 'grid',
-  gridTemplateColumns: 'auto auto',
-  rowGap: '5%',
+  gridTemplateColumns: 'repeat(2, 1fr)',
+  rowGap: '50px',
+  heigh: '100%',
 });
 
 export const MenuItem = styled.div({

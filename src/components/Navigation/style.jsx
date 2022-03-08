@@ -9,6 +9,7 @@ export const MainNav = styled.div({
   alignItems: 'center',
   position: 'relative',
   overflow: 'hidden',
+  boxShadow: '2px 4px 12px rgb(0,0,0,0.2)',
 });
 
 export const NavLinks = styled.ul(

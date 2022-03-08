@@ -67,7 +67,7 @@ const Footer = () => {
         </FooterMenu>
       </FooterFlex>
       <FooterLine />
-      <FooterBgPizza src="./images/pizzaTile.png" alt="" />
+      {/* <FooterBgPizza src="./images/pizzaTile.png" alt="" /> */}
       <p>© 2022 pizza</p>
     </FooterContainer>
   );

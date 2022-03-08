@@ -4,7 +4,7 @@ import App from './App';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer';
 import Menu from './pages/Menu';
 import './global.css';
 

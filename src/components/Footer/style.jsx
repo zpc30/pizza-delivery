@@ -8,7 +8,6 @@ export const FooterLine = styled.hr({
 
 export const FooterContainer = styled.div({
   padding: '3rem',
-  position: 'relative',
 });
 
 export const FooterFlex = styled.div({
@@ -30,13 +29,4 @@ export const FooterSocial = styled.div({
 
 export const FooterLogo = styled.img({
   width: '136px',
-});
-
-export const FooterBgPizza = styled.img({
-  position: 'absolute',
-  bottom: '-8rem',
-  right: '-20rem',
-  width: '787px',
-  zIndex: '-1',
-  opacity: '.3',
 });

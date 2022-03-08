@@ -23,6 +23,7 @@ export const HeroH1 = styled.h1({
   fontSize: '92px',
   fontWeight: '700',
   color: 'white',
+  marginBottom: '2rem',
 });
 
 export const HeroSpan = styled.span({

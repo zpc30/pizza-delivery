@@ -3,20 +3,20 @@ const Navigation = () => {
   return (
     <MainNav>
       <LogoImg src="./images/logoPizza.png" />
-        <NavLinks>
-          <li>
-            <NavLinksA to="/">Home</NavLinksA>
-          </li>
-          <li>
-            <NavLinksA to="#">About us</NavLinksA>
-          </li>
-          <li>
-            <NavLinksA to="#">Contact us</NavLinksA>
-          </li>
-          <li>
-            <NavLinksA to="/menu">Menu</NavLinksA>
-          </li>
-        </NavLinks>
+      <NavLinks>
+        <li>
+          <NavLinksA to="/">Home</NavLinksA>
+        </li>
+        <li>
+          <NavLinksA to="pizzaOrder">About us</NavLinksA>
+        </li>
+        <li>
+          <NavLinksA to="#">Contact us</NavLinksA>
+        </li>
+        <li>
+          <NavLinksA to="/menu">Menu</NavLinksA>
+        </li>
+      </NavLinks>
     </MainNav>
   );
 };

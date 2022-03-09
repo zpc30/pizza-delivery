@@ -7,6 +7,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Menu from './pages/Menu';
 import './global.css';
+import PizzaOrder from './pages/PizzaOrder';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Navigation />
         <Routes>
           <Route path="/" element={<App />} />
+          <Route path="pizzaOrder" element={<PizzaOrder />} />
           <Route path="menu" element={<Menu />} />
         </Routes>
         <Footer />

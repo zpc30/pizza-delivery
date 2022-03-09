@@ -7,7 +7,6 @@ const MenuItemDisplay = ({ imageUrl, title, desc, price }) => {
       <MenuItem>
         <MenuItemPhoto image={imageUrl} alt={title} />
         <h3>{title}</h3>
-        <p>{desc}</p>
         <p>Price: {price}$</p>
       </MenuItem>
     </>

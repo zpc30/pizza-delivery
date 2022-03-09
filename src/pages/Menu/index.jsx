@@ -8,9 +8,6 @@ import {
   SideMenuLinks,
   MenuItems,
   MenuPizza,
-  MenuItem,
-  MenuItemsRow,
-  MenuItemPhoto,
 } from './style';
 import MenuItemDisplay from '../../components/MenuItemDisplay';
 import food from '../../data/food';

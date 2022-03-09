@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const MenuContainer = styled.div({
   display: 'flex',
   flexDirection: 'row',
-  justifyContent: 'space-evenly',
+  justifyContent: 'left',
   margin: 0,
   padding: 0,
 });
@@ -15,9 +15,10 @@ export const UpperMenuDiv = styled.div({
 });
 
 export const MenuHeading = styled.h1({
-  padding: '3rem',
+  paddingLeft: '5rem',
+  paddingTop: '3rem',
   color: 'red',
-  fontSize: '5rem',
+  fontSize: '4.2rem',
   lineHeight: '4rem',
   span: {
     color: '#F9A72B',
@@ -34,16 +35,19 @@ export const MenuPizza = styled.img({
 
 export const SideMenuDiv = styled.div({
   marginTop: '2rem',
-  width: '10vw',
+  width: '10wv',
+  padding: '0 2rem',
   height: '100vh',
 });
 
 export const SideMenuCategories = styled.ul({
+  position: 'absolute',
+  left: 30,
   listStyle: 'none',
   display: 'flex',
   gap: '2.5rem',
   flexDirection: 'column',
-  marginLeft: '1rem',
+  textAlign: 'center',
 });
 
 export const SideMenuLinks = styled.button(
@@ -65,25 +69,34 @@ export const SideMenuLinks = styled.button(
 
 export const MenuItems = styled.div({
   position: 'relative',
-  width: '60%',
+  left: '50%',
+  transform: 'translateX(-45%)',
+  width: '80vw',
   display: 'grid',
   gridTemplateColumns: 'repeat(2, 1fr)',
   rowGap: '50px',
   heigh: '100%',
   borderLeft: '2px solid red',
-  paddingLeft: '10rem',
+  paddingLeft: '5rem',
 });
 
 export const MenuItem = styled.div({
   width: '100%',
   height: '100%',
+  h3: {
+    fontSize: '1.7rem',
+    fontWeight: '400',
+  },
+  p: {
+    fontSize: '1.3rem',
+  },
 });
 
 export const MenuItemPhoto = styled.div({}, ({ image }) => ({
-  width: '200px',
-  height: '200px',
+  width: '300px',
+  height: '300px',
   background: `url(${image})`,
   backgroundPosition: 'center center',
   backgroundRepeat: 'no-repeat',
-  backgroundSize: 'contain',
+  backgroundSize: 'cover',
 }));

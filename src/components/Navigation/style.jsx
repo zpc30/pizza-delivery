@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const MainNav = styled.div({
-  height: '100px',
+  height: '60px',
   display: 'flex',
   width: '100vw',
   justifyContent: 'center',
@@ -38,7 +38,9 @@ export const NavLinksA = styled(Link)(
 
 export const LogoImg = styled.img(
   {
-    width: '82px',
+    // width: '82px',
+    height: '100%',
+    padding: '0.2rem',
     position: 'absolute',
     left: '7.5rem',
   },

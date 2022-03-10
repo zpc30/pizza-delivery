@@ -16,8 +16,9 @@ const Footer = () => {
       <FooterFlex>
         <div>
           <FooterLogo src="./images/pizzaTile.png" alt="" />
-          <p>contact</p>
-          <p>email</p>
+          <p>phone: +123456789</p>
+          <p>contact: +381 60 000 000</p>
+          <p>email: Favorito1989@gmail.com</p>
         </div>
         <FooterMenu>
           <FooterLinks>

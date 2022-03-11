@@ -19,10 +19,17 @@ export const FooterFlex = styled.div({
     margin: '0.5rem 0',
     color: 'red',
   },
+  '@media (max-width: 450px)': {
+    flexDirection: 'column',
+    gap: '4rem',
+  },
 });
 
 export const FooterMenu = styled.div({
   marginLeft: '5rem',
+  '@media (max-width: 450px)': {
+    marginLeft: '.5rem',
+  },
 });
 
 export const FooterLinks = styled.div({
@@ -35,7 +42,11 @@ export const FooterLinks = styled.div({
     textDecoration: 'none',
     fontSize: '1.2rem',
     color: 'red',
-    // marginBottom: '1rem',
+  },
+  '@media (max-width: 450px)': {
+    justifyContent: 'unset',
+    alignItems: 'unset',
+    gap: '1rem',
   },
 });
 
@@ -45,6 +56,11 @@ export const FooterSocial = styled.div({
   marginTop: '4rem',
   marginBottom: '4rem',
   justifyContent: 'space-evenly',
+  '@media (max-width: 992px)': {
+    justifyContent: 'unset',
+    alignItems: 'unset',
+    gap: '1rem',
+  },
 });
 
 export const FooterLogo = styled.img({

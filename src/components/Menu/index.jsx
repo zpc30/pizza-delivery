@@ -3,6 +3,7 @@ import {
   MenuGrid,
   MenuH1,
   MenuHot,
+  MenuHotImg,
   MenuImgContainer,
   MenuH3,
 } from './style';
@@ -13,7 +14,7 @@ const Menu = () => {
       <MenuH1>Menu</MenuH1>
       <MenuGrid>
         <MenuHot>
-          <img src="./images/hotSpicy.png" />
+          <MenuHotImg src="./images/hotSpicy.png" />
           <MenuH3>Hot n spicy</MenuH3>
         </MenuHot>
         <MenuImgContainer>

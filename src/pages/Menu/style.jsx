@@ -35,8 +35,7 @@ export const MenuPizza = styled.img({
 
 export const SideMenuDiv = styled.div({
   marginTop: '2rem',
-  width: '10wv',
-  padding: '0 2rem',
+  width: '30vw',
   height: '100vh',
 });
 
@@ -68,21 +67,24 @@ export const SideMenuLinks = styled.button(
 );
 
 export const MenuItems = styled.div({
-  position: 'relative',
-  left: '50%',
-  transform: 'translateX(-45%)',
-  width: '80vw',
+  // position: 'relative',
+  // left: '50%',
+  // transform: 'translateX(-45%)',
+  width: '100%',
+  height: '100%',
   display: 'grid',
   gridTemplateColumns: 'repeat(2, 1fr)',
   rowGap: '50px',
-  heigh: '100%',
+  columnGap: '50px',
   borderLeft: '2px solid red',
   paddingLeft: '5rem',
 });
 
 export const MenuItem = styled.div({
+  position: 'relative',
   width: '100%',
   height: '100%',
+  cursor: 'pointer',
   h3: {
     fontSize: '1.7rem',
     fontWeight: '400',
@@ -99,4 +101,5 @@ export const MenuItemPhoto = styled.div({}, ({ image }) => ({
   backgroundPosition: 'center center',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
+  cursor: 'pointer',
 }));

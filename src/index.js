@@ -20,7 +20,7 @@ ReactDOM.render(
         <Navigation />
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="pizzaOrder" element={<PizzaOrder />} />
+          <Route path="pizzaOrder/:id" element={<PizzaOrder />} />
           <Route path="menu" element={<Menu />} />
         </Routes>
         <Footer />

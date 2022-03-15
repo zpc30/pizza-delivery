@@ -2,7 +2,7 @@ import { Burger, LogoImg, MainNav, NavLinks, NavLinksA } from './style';
 const Navigation = () => {
   return (
     <MainNav>
-      <LogoImg src="./images/logoPizza.png" />
+      <LogoImg src="../images/logoPizza.png" />
       <Burger>
         <div></div>
         <div></div>

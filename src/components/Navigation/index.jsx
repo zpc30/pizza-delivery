@@ -2,7 +2,7 @@ import { LogoImg, MainNav, NavLinks, NavLinksA } from './style';
 const Navigation = () => {
   return (
     <MainNav>
-      <LogoImg src="./images/logoPizza.png" />
+      <LogoImg src="../images/logoPizza.png" />
       <NavLinks>
         <li>
           <NavLinksA to="/">Home</NavLinksA>

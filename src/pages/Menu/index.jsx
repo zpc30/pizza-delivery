@@ -11,6 +11,7 @@ import {
 } from './style';
 import MenuItemDisplay from '../../components/MenuItemDisplay';
 import food from '../../data/food';
+import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
   const categories = ['All', 'Vegeterian', 'Cheese', 'Fish', 'Chilly', 'Meat'];
@@ -18,6 +19,9 @@ const Menu = () => {
   const foodList = food.filter((item) =>
     activeFilter === 'All' ? true : item.category === activeFilter
   );
+
+  const navigate = useNavigate();
+  const routeChange = (itemId) => navigate(`/pizzaOrder/${itemId}`);
 
   return (
     <>
@@ -44,6 +48,7 @@ const Menu = () => {
         <MenuItems>
           {foodList.map((foodItem) => (
             <MenuItemDisplay
+              handleClick={() => routeChange(foodItem.id)}
               key={foodItem.id}
               imageUrl={process.env.PUBLIC_URL + foodItem.img}
               title={foodItem.title}

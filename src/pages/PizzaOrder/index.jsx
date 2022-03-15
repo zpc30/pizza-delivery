@@ -9,19 +9,14 @@ const PizzaOrder = () => {
 
   const items = menuData.filter((item) => item.id === Number(id));
   const item = items.length > 0 ? items[0] : null;
+  const [itemPrice, setItemPrice] = useState(item.price.toFixed(2));
 
-  let [itemPrice, setItemPrice] = useState(item.price);
-  console.log(itemPrice);
   const updatePrice = (e) => {
     const checked = e.target.checked;
     if (checked) {
-      // itemPrice += parseFloat(e.target.value);
-      setItemPrice((itemPrice += e.target.value));
-      console.log(itemPrice);
+      setItemPrice((+itemPrice + +e.target.value).toFixed(2));
     } else {
-      // itemPrice -= parseFloat(e.target.value);
-      setItemPrice((itemPrice += e.target.value));
-      console.log(itemPrice);
+      setItemPrice((+itemPrice - +e.target.value).toFixed(2));
     }
   };
   return (
@@ -45,7 +40,7 @@ const PizzaOrder = () => {
           <input
             type="checkbox"
             className="ingridient"
-            value={'1.2'}
+            value={1.2}
             onChange={(e) => updatePrice(e)}
           ></input>
           <h5>Ketchup 1$</h5>
@@ -59,14 +54,14 @@ const PizzaOrder = () => {
           <input
             type="checkbox"
             className="ingridient"
-            value="1.4"
+            value={1.4}
             onChange={(e) => updatePrice(e)}
           ></input>
           <h5>Chesse 1.6$</h5>
           <input
             type="checkbox"
             className="ingridient"
-            value="1.6"
+            value={1.6}
             onChange={(e) => updatePrice(e)}
           ></input>
           <button>Order now!</button>

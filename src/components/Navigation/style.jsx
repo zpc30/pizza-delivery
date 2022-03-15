@@ -10,18 +10,44 @@ export const MainNav = styled.div({
   position: 'relative',
   overflow: 'hidden',
   boxShadow: '2px 4px 12px rgb(0,0,0,0.2)',
+  '@media (max-width: 768px)': {
+    height: '120px',
+  },
 });
 
-export const NavLinks = styled.ul(
-  {
-    listStyle: 'none',
-    display: 'flex',
-    gap: '2.5rem',
+export const Burger = styled.div({
+  '@media (max-width: 768px)': {
+    width: '40px',
+    height: '40px',
     position: 'absolute',
-    right: '7.5rem',
+    top: '45px',
+    right: '45px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+    '&>div': {
+      width: '40px',
+      height: '5px',
+      background: '#ED1C24',
+      borderRadius: '3rem',
+    },
   },
-  ({ theme }) => ({})
-);
+});
+
+export const NavLinks = styled.ul({
+  listStyle: 'none',
+  display: 'flex',
+  gap: '2.5rem',
+  position: 'absolute',
+  right: '10vw',
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+    background: '#ED1C24',
+    position: 'absolute',
+    right: '-100vw',
+    width: '100vw',
+  },
+});
 
 export const NavLinksA = styled(Link)(
   {
@@ -30,6 +56,9 @@ export const NavLinksA = styled(Link)(
     color: 'black',
     fontSize: '16px',
     fontWeight: '600',
+    '@media (max-width: 768px)': {
+      color: 'white',
+    },
   },
   ({ href }) => ({
     href,
@@ -38,11 +67,15 @@ export const NavLinksA = styled(Link)(
 
 export const LogoImg = styled.img(
   {
-    // width: '82px',
     height: '100%',
     padding: '0.2rem',
     position: 'absolute',
     left: '7.5rem',
+    '@media (max-width: 768px)': {
+      left: '25px',
+      width: '100px',
+      height: 'auto',
+    },
   },
   ({ src }) => ({
     src,

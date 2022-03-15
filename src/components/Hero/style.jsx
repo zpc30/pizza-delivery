@@ -4,6 +4,9 @@ export const HeroContainer = styled.div({
   position: 'relative',
   width: '100vw',
   height: '750px',
+  '@media (max-width: 768px)': {
+    height: '560px',
+  },
 });
 
 export const HeroImage = styled.img({
@@ -17,6 +20,9 @@ export const HeroText = styled.div({
   top: '50%',
   left: '7.5rem',
   transform: 'translateY(-50%)',
+  '@media (max-width: 768px)': {
+    left: '2rem',
+  },
 });
 
 export const HeroH1 = styled.h1({
@@ -24,6 +30,9 @@ export const HeroH1 = styled.h1({
   fontWeight: '700',
   color: 'white',
   marginBottom: '2rem',
+  '@media (max-width: 768px)': {
+    fontSize: '42px',
+  },
 });
 
 export const HeroSpan = styled.span({

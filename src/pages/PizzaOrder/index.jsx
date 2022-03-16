@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { PageContainer, OrderDetails, OrderImage } from './style';
 import menuData from '../../data/food';
 
 const PizzaOrder = () => {
   const { id } = useParams();
-  // const allIngridients = document.querySelectorAll('.ingridient');
 
   const items = menuData.filter((item) => item.id === Number(id));
   const item = items.length > 0 ? items[0] : null;
@@ -19,6 +20,15 @@ const PizzaOrder = () => {
       setItemPrice((+itemPrice - +e.target.value).toFixed(2));
     }
   };
+  toast.configure();
+
+  const notify = () => {
+    toast.success(`Your order is accepted it will cost you ${itemPrice} $`, {
+      position: toast.POSITION.TOP_RIGHT,
+      autoClose: 3000,
+    });
+  };
+
   return (
     <>
       <PageContainer>
@@ -64,7 +74,7 @@ const PizzaOrder = () => {
             value={1.6}
             onChange={(e) => updatePrice(e)}
           ></input>
-          <button>Order now!</button>
+          <button onClick={notify}>Order now!</button>
         </OrderDetails>
       </PageContainer>
     </>

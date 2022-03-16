@@ -39,8 +39,20 @@ export const OrderDetails = styled.div({
     fontWeight: '100',
   },
   h4: {
-    marginTop: '6rem',
+    marginTop: '3rem',
     fontSize: '2rem',
     fontWeight: '400',
+  },
+  button: {
+    display: 'block',
+    padding: '0.8rem 1.2rem',
+    marginLeft: '5rem',
+    border: '1px solid red',
+    color: '#000',
+    fontFamily: 'inherit',
+    fontSize: '1rem',
+    borderRadius: '20px',
+    backgroundColor: 'transparent',
+    cursor: 'pointer',
   },
 });

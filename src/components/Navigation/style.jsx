@@ -56,7 +56,7 @@ export const NavLinksA = styled(Link)(
     fontSize: '16px',
     fontWeight: '600',
     '@media (max-width: 768px)': {
-      color: 'black',
+      color: 'white',
     },
   },
   ({ href }) => ({

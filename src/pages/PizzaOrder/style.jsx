@@ -28,18 +28,31 @@ export const OrderDetails = styled.div({
   width: '45vw',
   h3: {
     textAlign: 'left',
-    fontSize: '5rem',
+    fontSize: '4rem',
     fontWeight: '200',
     marginBottom: '2rem',
   },
   p: {
     marginTop: '2rem',
+    marginBottom: '2rem',
     fontSize: '1.2rem',
     fontWeight: '100',
   },
   h4: {
-    marginTop: '2rem',
+    marginTop: '3rem',
     fontSize: '2rem',
     fontWeight: '400',
+  },
+  button: {
+    display: 'block',
+    padding: '0.8rem 1.2rem',
+    marginLeft: '5rem',
+    border: '1px solid red',
+    color: '#000',
+    fontFamily: 'inherit',
+    fontSize: '1rem',
+    borderRadius: '20px',
+    backgroundColor: 'transparent',
+    cursor: 'pointer',
   },
 });

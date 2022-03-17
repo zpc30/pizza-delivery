@@ -48,9 +48,10 @@ export const MenuPizza = styled.img({
 });
 
 export const SideMenuDiv = styled.div({
-  width: '10wv',
-  padding: '0 2rem',
-  height: '20vh',
+  marginTop: '2rem',
+  width: '30vw',
+  height: '10vh',
+  marginLeft: '2rem',
 });
 
 export const SideMenuCategories = styled.ul({
@@ -62,6 +63,7 @@ export const SideMenuCategories = styled.ul({
   flexWrap: 'wrap',
   gap: '2.5rem',
   textAlign: 'center',
+
   '@media (min-width: 1336px)': {
     flexDirection: 'column',
   },
@@ -93,6 +95,7 @@ export const MenuItems = styled.div({
   rowGap: '50px',
   height: '100%',
   gap: '1rem',
+  marginTop: '2rem',
   '@media (min-width: 768px)': {
     gap: '2rem',
   },
@@ -110,6 +113,7 @@ export const MenuItems = styled.div({
 export const MenuItem = styled.div({
   width: '280px',
   height: '100%',
+  cursor: 'pointer',
   h3: {
     fontSize: '1.4rem',
     fontWeight: '400',
@@ -126,4 +130,5 @@ export const MenuItemPhoto = styled.div({}, ({ image }) => ({
   backgroundPosition: 'center center',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
+  cursor: 'pointer',
 }));

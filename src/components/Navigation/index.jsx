@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Burger, LogoImg, MainNav, NavLinks, NavLinksA } from './style';
 
 const Navigation = () => {

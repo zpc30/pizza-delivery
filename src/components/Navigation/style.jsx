@@ -16,7 +16,7 @@ export const MainNav = styled.div({
 });
 
 export const Burger = styled.div({
-  '@media (max-width: 768px)': {
+  '@media (max-width: 767px)': {
     width: '40px',
     height: '40px',
     position: 'absolute',
@@ -35,17 +35,16 @@ export const Burger = styled.div({
 });
 
 export const NavLinks = styled.ul({
-  listStyle: 'none',
-  display: 'flex',
-  gap: '2.5rem',
   position: 'absolute',
-  right: '10vw',
-  '@media (max-width: 768px)': {
-    flexDirection: 'column',
-    background: '#ED1C24',
+  right: '-100vw',
+  listStyle: 'none',
+
+  '@media (min-width: 768px)': {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '2rem',
     position: 'absolute',
-    right: '-100vw',
-    width: '100vw',
+    right: '5vw',
   },
 });
 
@@ -57,7 +56,7 @@ export const NavLinksA = styled(Link)(
     fontSize: '16px',
     fontWeight: '600',
     '@media (max-width: 768px)': {
-      color: 'white',
+      color: 'black',
     },
   },
   ({ href }) => ({

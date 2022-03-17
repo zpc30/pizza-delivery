@@ -2,8 +2,11 @@ import styled from 'styled-components';
 
 export const FooterLine = styled.hr({
   border: '2px solid #ED1C24',
-  width: '95vw',
+  width: '80vw',
   marginBottom: '2rem',
+  '@media (min-width: 768px)': {
+    width: '90vw',
+  },
 });
 
 export const FooterContainer = styled.div({

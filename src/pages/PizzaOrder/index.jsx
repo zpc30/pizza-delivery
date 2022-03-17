@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import ConfirmOrder from '../../components/ModalForOrder';
 import { PageContainer, OrderDetails, OrderImage } from './style';
 import menuData from '../../data/food';
 
@@ -11,6 +10,7 @@ const PizzaOrder = () => {
   const items = menuData.filter((item) => item.id === Number(id));
   const item = items.length > 0 ? items[0] : null;
   const [itemPrice, setItemPrice] = useState(item.price.toFixed(2));
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const updatePrice = (e) => {
     const checked = e.target.checked;
@@ -19,14 +19,6 @@ const PizzaOrder = () => {
     } else {
       setItemPrice((+itemPrice - +e.target.value).toFixed(2));
     }
-  };
-  toast.configure();
-
-  const notify = () => {
-    toast.success(`Your order is accepted it will cost you ${itemPrice} $`, {
-      position: toast.POSITION.TOP_RIGHT,
-      autoClose: 3000,
-    });
   };
 
   return (
@@ -74,8 +66,19 @@ const PizzaOrder = () => {
             value={1.6}
             onChange={(e) => updatePrice(e)}
           ></input>
-          <button onClick={notify}>Order now!</button>
+          <button
+            onClick={() => {
+              setIsModalOpen(true);
+            }}
+          >
+            Order now!
+          </button>
         </OrderDetails>
+        <ConfirmOrder
+          isOpen={isModalOpen}
+          itemPrice={itemPrice}
+          onToggle={() => setIsModalOpen(!isModalOpen)}
+        />
       </PageContainer>
     </>
   );

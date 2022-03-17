@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ConfirmOrder from '../../components/ModalForOrder';
 import { PageContainer, OrderDetails, OrderImage } from './style';

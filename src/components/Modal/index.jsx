@@ -1,10 +1,4 @@
-import {
-  ModalBody,
-  ModalContainer,
-  ModalButtons,
-  OrderBtn,
-  CancelBtn,
-} from '../ModalForOrder/style';
+import { ModalBody, ModalContainer } from '../ModalForOrder/style';
 
 const Modal = ({ isOpen, onToggle, children }) => {
   return (

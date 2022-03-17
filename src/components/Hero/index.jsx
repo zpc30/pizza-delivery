@@ -9,10 +9,14 @@ import {
   SocialImg,
   SocialLinks,
 } from './style';
+import React, { useState } from 'react';
+import JoinUs from '../ModalForJoinUs';
 
 const Hero = () => {
+  const [openModal, setModalOpen] = useState(false);
   return (
     <HeroContainer>
+      <JoinUs isOpen={openModal} onToggle={() => setModalOpen(!openModal)} />
       <HeroImage src="./images/coverHero.png" />
       <HeroText>
         <HeroH1>
@@ -20,7 +24,13 @@ const Hero = () => {
           <HeroSpan>pizza</HeroSpan> is the answer
         </HeroH1>
         <OrderBtn>Order Now!</OrderBtn>
-        <JoinBtn>Join Us!</JoinBtn>
+        <JoinBtn
+          onClick={() => {
+            setModalOpen(true);
+          }}
+        >
+          Join Us!
+        </JoinBtn>
       </HeroText>
       <SocialLinks>
         <a href="#">

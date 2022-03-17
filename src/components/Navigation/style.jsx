@@ -16,12 +16,41 @@ export const MainNav = styled.div({
 });
 
 export const Burger = styled.div({
+<<<<<<< HEAD
+  '@media (max-width: 767px)': {
+=======
   '@media (max-width: 768px)': {
+>>>>>>> main
     width: '40px',
     height: '40px',
     position: 'absolute',
     top: '45px',
     right: '45px',
+<<<<<<< HEAD
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+    '&>div': {
+      width: '40px',
+      height: '5px',
+      background: '#ED1C24',
+      borderRadius: '3rem',
+    },
+  },
+});
+
+export const NavLinks = styled.ul({
+  position: 'absolute',
+  right: '-100vw',
+  listStyle: 'none',
+
+  '@media (min-width: 768px)': {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '2rem',
+    position: 'absolute',
+    right: '5vw',
+=======
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-evenly',
@@ -46,6 +75,7 @@ export const NavLinks = styled.ul({
     position: 'absolute',
     right: '-100vw',
     width: '100vw',
+>>>>>>> main
   },
 });
 

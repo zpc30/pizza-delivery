@@ -10,10 +10,13 @@ import {
   SocialLinks,
 } from './style';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import JoinUs from '../ModalForJoinUs';
 
 const Hero = () => {
   const [openModal, setModalOpen] = useState(false);
+  const navigate = useNavigate();
+  const routeChange = () => navigate('../Menu');
   return (
     <HeroContainer>
       <JoinUs isOpen={openModal} onToggle={() => setModalOpen(!openModal)} />
@@ -23,7 +26,7 @@ const Hero = () => {
           Whatever the question, <br />
           <HeroSpan>pizza</HeroSpan> is the answer
         </HeroH1>
-        <OrderBtn>Order Now!</OrderBtn>
+        <OrderBtn onClick={() => routeChange()}>Order Now!</OrderBtn>
         <JoinBtn
           onClick={() => {
             setModalOpen(true);

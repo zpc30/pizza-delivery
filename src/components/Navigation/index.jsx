@@ -3,7 +3,7 @@ import { Burger, LogoImg, MainNav, NavLinks, NavLinksA } from './style';
 const Navigation = () => {
   return (
     <MainNav>
-      <LogoImg src="../images/logoPizza.png" />
+      <LogoImg src="./images/logoPizza.png" />
       <Burger>
         <div></div>
         <div></div>
@@ -14,10 +14,10 @@ const Navigation = () => {
           <NavLinksA to="/">Home</NavLinksA>
         </li>
         <li>
-          <NavLinksA to="pizzaOrder">About us</NavLinksA>
+          <NavLinksA to="/">About us</NavLinksA>
         </li>
         <li>
-          <NavLinksA to="#">Contact us</NavLinksA>
+          <NavLinksA to="/">Contact us</NavLinksA>
         </li>
         <li>
           <NavLinksA to="/menu">Menu</NavLinksA>

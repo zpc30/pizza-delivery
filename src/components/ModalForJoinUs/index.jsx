@@ -40,6 +40,7 @@ const JoinUs = ({ isOpen, onToggle }) => {
       autoClose: 2000,
     });
   };
+
   return (
     isOpen && (
       <ModalBody onToggle={onToggle} imageUrl={'../images/joinUS.jpeg'}>
@@ -96,7 +97,14 @@ const JoinUs = ({ isOpen, onToggle }) => {
             ></input>
           </FormBody>
           <FormFooter>
-            <SumbitBtn onClick={() => formCheck(formData)}>Aplly!</SumbitBtn>
+            <SumbitBtn
+              onClick={() => {
+                formCheck(formData);
+                onToggle();
+              }}
+            >
+              Aplly!
+            </SumbitBtn>
             <CancelBtn onClick={onToggle}>Cancel</CancelBtn>
           </FormFooter>
         </FormContainer>

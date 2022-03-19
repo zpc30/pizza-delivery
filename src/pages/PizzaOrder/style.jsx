@@ -4,15 +4,23 @@ export const PageContainer = styled.div({
   height: '100%',
   width: '100%',
   display: 'flex',
+  flexDirection: 'column',
+  '@media (min-width: 768px)': {
+    flexDirection: 'row',
+  },
 });
 
 export const OrderImage = styled.div(
   {
     textAlign: 'center',
     float: 'left',
-    height: '76vh',
-    width: '45vw',
-    margin: '5rem 0 2rem 2rem',
+    height: '50vh',
+    width: '95vw',
+    margin: '3rem auto',
+    '@media (min-width: 768px)': {
+      height: '74vh',
+      margin: '5rem 2rem',
+    },
   },
   ({ imageUrl }) => ({
     background: `url(${imageUrl})`,
@@ -23,9 +31,10 @@ export const OrderImage = styled.div(
 );
 
 export const OrderDetails = styled.div({
-  margin: '5rem 0 2rem 2rem',
-  height: '100vh',
-  width: '45vw',
+  margin: '0rem  2rem ',
+  height: '115vh',
+  width: '90vw',
+
   h3: {
     textAlign: 'left',
     fontSize: '4rem',
@@ -46,7 +55,7 @@ export const OrderDetails = styled.div({
   button: {
     display: 'block',
     padding: '0.8rem 1.2rem',
-    marginLeft: '5rem',
+    margin: '3rem auto',
     border: '1px solid red',
     color: '#000',
     fontFamily: 'inherit',
@@ -54,5 +63,8 @@ export const OrderDetails = styled.div({
     borderRadius: '20px',
     backgroundColor: 'transparent',
     cursor: 'pointer',
+  },
+  '@media (min-width: 768px)': {
+    margin: '5rem 2rem',
   },
 });
